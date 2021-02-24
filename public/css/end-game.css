@@ -1,0 +1,167 @@
+body {
+  background-color: #E9FBFF;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  margin: 200px auto 0;
+}
+
+h1 {
+  color: #29CB24;
+  font-size: 2.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 50px;
+}
+
+.results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 75px auto 0;
+  width: 550px;
+}
+
+.right {
+  margin-right: 50px;
+}
+
+.right h2 {
+  color: green;
+}
+
+.wrong {
+  margin-left: 50px;
+}
+
+.wrong h2 {
+  color: red;
+}
+
+.score {
+  margin-bottom: 50px;
+}
+
+.score h2 {
+  font-size: 2.5rem;
+}
+
+.time h2 {
+  color: #5A24DF;
+}
+
+.results {
+  border: 3px dotted #DF24A3;
+}
+
+button {
+  margin-top: 50px;
+  border-radius: 50px;
+  padding: 5px 10px;
+  border: 3px solid #29CB24;
+  font-size: 1.2rem;
+  color: #29CB24;
+  font-weight: bold;
+  background-color: #FAFEFF;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  color: #FAFEFF;
+  background-color: #29CB24;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+a {
+  display: none;
+}
+
+
+@media (max-height: 900px) {
+  .container {
+    margin: 100px auto 50px;
+  }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+  body {
+    overflow: auto;
+  }
+
+  .container {
+    margin: 100px auto 50px;
+  }
+
+  .results {
+    display: block;
+    width: 300px;
+  }
+
+  .right, .wrong, .time {
+    margin: 50px auto;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .score h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow: auto;
+  }
+
+  .container {
+    margin: 100px auto 50px;
+  }
+
+  .results {
+    display: block;
+    width: 300px;
+  }
+
+  .right, .wrong, .time {
+    margin: 50px auto;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .score h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .results {
+    width: 250px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .score h2 {
+    font-size: 2rem;
+  }
+}

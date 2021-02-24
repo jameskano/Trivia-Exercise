@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ultra Trivia</title>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/0fa68b04a7.js" crossorigin="anonymous"></script>
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/trivia.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="title">Ultra Trivia</h1>
+      <h3 class="question-num">Question <small>1</small>/20</h3>
+
+      <div class="question">
+        <h2><%= data[0].question %></h2>
+        <h2 style="display: none"><%= data[1].question %></h2>
+        <h2 style="display: none"><%= data[2].question %></h2>
+        <h2 style="display: none"><%= data[3].question %></h2>
+        <h2 style="display: none"><%= data[4].question %></h2>
+        <h2 style="display: none"><%= data[5].question %></h2>
+        <h2 style="display: none"><%= data[6].question %></h2>
+        <h2 style="display: none"><%= data[7].question %></h2>
+        <h2 style="display: none"><%= data[8].question %></h2>
+        <h2 style="display: none"><%= data[9].question %></h2>
+        <h2 style="display: none"><%= data[10].question %></h2>
+        <h2 style="display: none"><%= data[11].question %></h2>
+        <h2 style="display: none"><%= data[12].question %></h2>
+        <h2 style="display: none"><%= data[13].question %></h2>
+        <h2 style="display: none"><%= data[14].question %></h2>
+        <h2 style="display: none"><%= data[15].question %></h2>
+        <h2 style="display: none"><%= data[16].question %></h2>
+        <h2 style="display: none"><%= data[17].question %></h2>
+        <h2 style="display: none"><%= data[18].question %></h2>
+        <h2 style="display: none"><%= data[19].question %></h2>
+      </div>
+
+      <div class="answers">
+        <div class="answer-main">
+          <div class="answer">
+            <div class="answer-container">
+              <p class="hit"><%= data[0].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[1].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[2].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[3].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[4].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[5].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[6].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[7].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[8].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[9].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[10].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[11].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[12].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[13].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[14].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[15].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[16].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[17].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[18].correct_answer %></p>
+              <p class="hit" style="display: none"><%= data[19].correct_answer %></p>
+            </div>
+            <div class="correct"><i class="fas fa-check fa-2x"></i></div>
+          </div>
+        </div>
+
+        <div class="answer-main">
+          <div class="answer">
+            <div class="answer-container">
+              <p><%= data[0].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[1].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[2].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[3].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[4].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[5].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[6].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[7].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[8].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[9].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[10].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[11].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[12].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[13].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[14].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[15].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[16].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[17].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[18].incorrect_answers[0] %></p>
+              <p style="display: none"><%= data[19].incorrect_answers[0] %></p>
+            </div>
+            <div class="incorrect"><i class="fas fa-times fa-2x"></i></div>
+          </div>
+        </div>
+
+        <div class="answer-main">
+          <div class="answer">
+            <div class="answer-container">
+              <p><%= data[0].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[1].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[2].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[3].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[4].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[5].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[6].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[7].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[8].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[9].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[10].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[11].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[12].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[13].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[14].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[15].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[16].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[17].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[18].incorrect_answers[1] %></p>
+              <p style="display: none"><%= data[19].incorrect_answers[1] %></p>
+            </div>
+            <div class="incorrect"><i class="fas fa-times fa-2x"></i></div>
+          </div>
+        </div>
+
+        <div class="answer-main">
+          <div class="answer">
+            <div class="answer-container">
+              <p><%= data[0].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[1].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[2].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[3].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[4].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[5].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[6].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[7].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[8].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[9].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[10].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[11].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[12].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[13].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[14].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[15].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[16].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[17].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[18].incorrect_answers[2] %></p>
+              <p style="display: none"><%= data[19].incorrect_answers[2] %></p>
+            </div>
+            <div class="incorrect"><i class="fas fa-times fa-2x"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <form class="end-game-form" action="/trivia" method="post">
+        <button type="submit" name="button"></button>
+        <input id="username" type="hidden" name="username" value="">
+        <input id="score" type="hidden" name="score" value="">
+        <input id="time" type="hidden" name="time" value="">
+      </form>
+    </div>
+
+    <button id="next-button" class="next-button" type="button" name="button">Next</button>
+
+    <script src="js/trivia.js" charset="utf-8"></script>
+  </body>
+</html>

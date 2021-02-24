@@ -1,0 +1,185 @@
+body {
+  background-color: #E9FBFF;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  margin: 200px auto 50px;
+}
+
+.home-title {
+  color: #29CB24;
+  font-size: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.username {
+  text-align: center;
+  margin: 100px auto 50px;
+  height: 325px;
+  width: 400px;
+  border: 3px dotted #DF24A3;
+}
+
+.username p {
+  font-size: 1.2rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.name-text {
+  margin-top: 50px !important;
+}
+
+.username input {
+  height: 22px;
+  border: 1px solid #ABABAB;
+  border-radius: 2px;
+  font-size: 1rem;
+  background-color: #E9FBFF;
+  width: 195px;
+}
+
+.username input:focus {
+  outline: 0;
+}
+
+.category-menu {
+  height: 26px;
+  width: 200px;
+  border: 1px solid #ABABAB;
+  border-radius: 2px;
+  font-size: 1rem;
+  background-color: #E9FBFF;
+}
+
+.category-menu:focus {
+  outline: 0;
+}
+
+.username button {
+  display: block;
+  margin: 40px auto 50px;
+  border-radius: 50px;
+  padding: 5px 10px;
+  border: 3px solid #29CB24;
+  font-size: 1.2rem;
+  color: #29CB24;
+  font-weight: bold;
+  background-color: #FAFEFF;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+.username button:focus {
+  outline: 0;
+}
+
+.username button:hover {
+  color: #FAFEFF;
+  background-color: #29CB24;
+}
+
+.username button:active {
+  transform: scale(0.95);
+}
+
+.score {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #29CB24;
+}
+
+small {
+  color: red;
+  display: block;
+  margin: 0;
+  margin-left: 100px;
+  text-align: left;
+}
+
+
+@media (max-height: 900px) {
+  .container {
+    margin-top: 100px;
+  }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+  body {
+    overflow: auto;
+  }
+
+  .container {
+    margin-top: 80px;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .username {
+    width: 330px;
+    margin-top: 50px;
+  }
+
+  .username p {
+    margin-left: 65px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow: auto;
+  }
+
+  .container {
+    margin-top: 90px;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .username {
+    width: 330px;
+    margin-top: 50px;
+  }
+
+  .username p {
+    margin-left: 65px;
+  }
+}
+
+@media (max-width: 330px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .username {
+    width: 300px;
+  }
+
+  .username p {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 300px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .username {
+    width: 260px;
+  }
+
+  .username p {
+    margin-left: 30px;
+  }
+}

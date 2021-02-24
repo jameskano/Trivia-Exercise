@@ -1,0 +1,102 @@
+body {
+  background-color: #E9FBFF;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.home {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.home a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 14px;
+  border: 2px dotted #DF24A3;
+}
+
+.score-container {
+  margin-top: 100px;
+}
+
+.score {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.score p {
+  margin: 0;
+}
+
+.score-bg {
+  background-color: #29CB24;
+  transform: skew(-20deg);
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 400px;
+  height: 38px;
+  position: absolute;
+  top: -5px;
+  left: -20px;
+  z-index: -1;
+}
+
+@media (max-width: 600px) {
+  .score-container {
+    margin-top: 60px;
+  }
+
+  .score {
+    max-width: 300px;
+    font-size: 1.2rem;
+  }
+
+  .score-bg {
+    width: 300px;
+  }
+}
+
+@media (max-width: 330px) {
+  .score {
+    max-width: 250px;
+    font-size: 1rem;
+  }
+
+  .score-bg {
+    width: 250px;
+  }
+}
+
+@media (max-width: 300px) {
+  .score {
+    max-width: 220px;
+  }
+
+  .score-bg {
+    width: 220px;
+  }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+  .score-container {
+    margin-top: 60px;
+  }
+
+  .score {
+    max-width: 300px;
+    font-size: 1.2rem;
+  }
+
+  .score-bg {
+    width: 300px;
+  }
+}
