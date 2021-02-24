@@ -1,1 +1,1 @@
-# Trivia-Exercise
+# Trivia Exercise
