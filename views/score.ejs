@@ -18,9 +18,9 @@
     <p class="home"><a href="/">Return Home</a></p>
 
     <div class="score-container">
-      <% data.forEach(doc => { %>
-        <div class="score"><p>1 - <%= doc.name %></p><p><%= doc.score %>p</p><p><%= doc.time %>sec</p><div class="score-bg"></div></div>
-      <% }) %>
+      <% for(let i = 0; i < data.length; i++){ %>
+        <div class="score"><p><%= i + 1 %> - <%= data[i].name %></p><p><%= data[i].score %>p</p><p><%= data[i].time %>sec</p><div class="score-bg"></div></div>
+      <% } %>
     </div>
 
     <script src="js/score.js" charset="utf-8"></script>
