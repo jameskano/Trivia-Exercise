@@ -46,7 +46,7 @@ app.get("/score", function(req, res) {
     else {
       console.log(err);
     }
-  });
+  }).sort({score: -1});
 });
 
 app.get("/end-game", function(req, res) {
